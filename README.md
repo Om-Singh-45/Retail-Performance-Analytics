@@ -46,22 +46,6 @@ This project demonstrates the use of **data analytics, data visualization, and b
 
 ---
 
-## 🧮 DAX Measures Used
-```DAX
-Total Quantity = SUM('Online Retail'[Quantity])
-
-Total Revenue = SUMX('Online Retail', 'Online Retail'[Quantity] * 'Online Retail'[UnitPrice])
-
-Total Customers = DISTINCTCOUNT('Online Retail'[CustomerID])
-
-Previous Month Quantity =
-CALCULATE(
-    [Total Quantity],
-    DATEADD('Online Retail'[InvoiceDate], -1, MONTH)
-)
-
-Quantity Growth % =
-DIVIDE([Total Quantity] - [Previous Month Quantity], [Previous Month Quantity], 0)
 
 ---
 
