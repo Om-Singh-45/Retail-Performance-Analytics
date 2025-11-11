@@ -63,6 +63,8 @@ CALCULATE(
 Quantity Growth % =
 DIVIDE([Total Quantity] - [Previous Month Quantity], [Previous Month Quantity], 0)
 
+---
+
 ## 📈 Dashboard 
 
 <img width="1244" height="719" alt="Screenshot 2025-11-12 023400" src="https://github.com/user-attachments/assets/c19639cb-e527-4be8-a532-bc4e0140af2a" />
